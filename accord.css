@@ -1,0 +1,52 @@
+.container-accord {
+  max-width: 700px;
+  margin: 20px auto;
+}
+.heading-acc-main {
+  text-align: center;
+  /* font options */
+  padding: 20px;
+  margin-bottom: 20px;
+}
+.accordeon-wraper {
+  padding: 0 20px;
+}
+.accordeon {
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+.container-accord .accordeon.active .heading-accord {
+  border-bottom: solid rgb(23, 4, 171);
+  background-color: ghostwhite;
+}
+.container-accord .accordeon.active .heading-accord i {
+  color: rgba(37, 37, 37, 1);
+  transform: rotate(180deg);
+  transition: ease-in 0.2s;
+}
+.container-accord .heading-accord {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  border-bottom: solid rgba(171, 4, 51, 1);
+  padding: 0px 20px;
+}
+
+.container-accord .heading-accord h3 {
+  /* font options */
+}
+
+.container-accord .Accordeon-content {
+  padding: 15px 20px;
+  border-top: 0;
+  display: none;
+  animation: animation 0.2s linear backwards;
+  line-height: 2;
+  transform-origin: top;
+}
+.container-accord .accordeon.active .Accordeon-content {
+  display: block;
+}
+@keyframes animatation {
+}
